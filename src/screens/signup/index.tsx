@@ -3,6 +3,7 @@ import {
   SafeAreaView,
   View,
   Text,
+  Image,
   StyleSheet,
   Dimensions,
   TextInput,
@@ -48,21 +49,61 @@ const SignUp: React.FC = () => {
   return (
     <SafeAreaView>
       <View style={styles.default}>
+        <View style={styles.imageView}>
+          <Image
+            source={{
+              uri: 'https://upload.wikimedia.org/wikipedia/commons/4/46/M%C3%A9liuz_Logo.png',
+            }}
+            style={styles.titleImage}
+          />
+        </View>
         <View style={styles.card}>
-          <Text style={styles.title}>Cadastrar</Text>
-          <TextInput
-            placeholder="Informe seu nome"
-            onChangeText={e => setData({...data, name: e})}
-          />
-          <TextInput
-            placeholder="Informe seu email"
-            onChangeText={e => setData({...data, email: e})}
-          />
-          <TextInput
-            placeholder="Informe sua senha"
-            secureTextEntry={true}
-            onChangeText={e => setData({...data, password: e})}
-          />
+          <View style={styles.titleView}>
+            <Text style={styles.title}>Cadastrar</Text>
+          </View>
+          <View style={styles.sectionStyle}>
+            <Image
+              source={{
+                uri: 'https://i.pinimg.com/originals/0c/3b/3a/0c3b3adb1a7530892e55ef36d3be6cb8.png',
+              }}
+              style={styles.imageStyle}
+            />
+            <TextInput
+              placeholder="Informe seu nome"
+              autoComplete="name"
+              placeholderTextColor={'#555555'}
+              onChangeText={e => setData({...data, name: e})}
+            />
+          </View>
+          <View style={styles.sectionStyle}>
+            <Image
+              source={{
+                uri: 'https://cdn.iconscout.com/icon/free/png-256/email-2155119-1814289.png',
+              }}
+              style={styles.imageStyle}
+            />
+            <TextInput
+              placeholder="Informe seu email"
+              autoComplete="email"
+              keyboardType="email-address"
+              placeholderTextColor={'#555555'}
+              onChangeText={e => setData({...data, email: e})}
+            />
+          </View>
+          <View style={styles.sectionStyle}>
+            <Image
+              source={{
+                uri: 'http://cdn.onlinewebfonts.com/svg/img_398183.png',
+              }}
+              style={styles.imageStyle}
+            />
+            <TextInput
+              placeholder="Informe sua senha"
+              secureTextEntry={true}
+              placeholderTextColor={'#555555'}
+              onChangeText={e => setData({...data, password: e})}
+            />
+          </View>
           <Button
             title="Cadastrar"
             onPress={handleRegister}
@@ -96,10 +137,13 @@ const styles = StyleSheet.create({
     borderRadius: 12,
   },
   title: {
-    alignContent: 'center',
     fontSize: 25,
     fontWeight: 'bold',
+    color: '#222222',
     paddingBottom: 20,
+  },
+  titleView: {
+    alignItems: 'center',
   },
   linkScreen: {
     alignItems: 'center',
@@ -113,5 +157,35 @@ const styles = StyleSheet.create({
   outText: {
     fontSize: 15,
     fontWeight: 'bold',
+  },
+  sectionStyle: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 10,
+    borderWidth: 1.0,
+    borderColor: '#000',
+    height: 40,
+    borderRadius: 5,
+    minWidth: 190,
+  },
+  imageStyle: {
+    padding: 10,
+    marginTop: 5,
+    marginBottom: 5,
+    marginLeft: 10,
+    marginRight: 10,
+    height: 25,
+    width: 25,
+    alignItems: 'flex-start',
+    resizeMode: 'stretch',
+  },
+  imageView: {
+    height: 200,
+    width: 210,
+  },
+  titleImage: {
+    height: 200,
+    width: 210,
+    resizeMode: 'center',
   },
 });
