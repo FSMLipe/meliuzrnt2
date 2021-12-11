@@ -4,6 +4,11 @@ export interface IUser {
   password: string;
 }
 
+export interface IConfirmationText {
+  result: boolean; //true is 200 | false is =/= 200
+  confirmationText: string;
+}
+
 export interface IAuth {
   auth: {
     token: string;

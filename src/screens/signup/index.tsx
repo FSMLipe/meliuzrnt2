@@ -12,10 +12,8 @@ import {
 
 import {useNavigation} from '@react-navigation/native';
 
-import IsAuth from '../../components/IsAuth';
-
 import api from '../../services';
-import { IUser } from '../../types/index';
+import {IUser} from '../../types/index';
 
 const SignUp: React.FC = () => {
   const navigation: void | any = useNavigation();
@@ -73,17 +71,15 @@ const SignUp: React.FC = () => {
           />
         </View>
         <View>
-          <Text>
-            Já possui cadastro?
-            <TouchableOpacity onPress={handleLogin}>
-              <Text>Logar</Text>
-            </TouchableOpacity>
-          </Text>
+          <Text style={styles.outText}>Já possui cadastro?</Text>
+          <TouchableOpacity onPress={handleLogin} style={styles.linkScreen}>
+            <Text style={styles.innerText}>Logar</Text>
+          </TouchableOpacity>
         </View>
       </View>
     </SafeAreaView>
   );
-}
+};
 
 export default SignUp;
 
@@ -104,5 +100,18 @@ const styles = StyleSheet.create({
     fontSize: 25,
     fontWeight: 'bold',
     paddingBottom: 20,
+  },
+  linkScreen: {
+    alignItems: 'center',
+    alignContent: 'center',
+    justifyContent: 'center',
+  },
+  innerText: {
+    color: 'blue',
+    textDecorationLine: 'underline',
+  },
+  outText: {
+    fontSize: 15,
+    fontWeight: 'bold',
   },
 });
