@@ -5,7 +5,6 @@ import {
   Text,
   Image,
   StyleSheet,
-  Dimensions,
   TextInput,
   TouchableOpacity,
   Button,
@@ -128,7 +127,7 @@ const styles = StyleSheet.create({
   default: {
     justifyContent: 'center',
     alignItems: 'center',
-    height: Dimensions.get('window').height,
+    height: '100%', //Dimensions.get('window').height,
   },
   card: {
     backgroundColor: '#FECAD6',
@@ -180,11 +179,11 @@ const styles = StyleSheet.create({
     resizeMode: 'stretch',
   },
   imageView: {
-    height: 200,
+    height: 150,
     width: 210,
   },
   titleImage: {
-    height: 200,
+    height: 150,
     width: 210,
     resizeMode: 'center',
   },

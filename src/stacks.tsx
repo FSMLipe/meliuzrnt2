@@ -23,6 +23,7 @@ const BottomNavigation: React.FC = () => {
         screenOptions={{
           tabBarActiveTintColor: '#FF0055EA',
           tabBarInactiveTintColor: '#212121EA',
+          headerShown: false,
         }}>
         <Tabs.Screen
           name="Onboard"
@@ -34,9 +35,48 @@ const BottomNavigation: React.FC = () => {
             ),
           }}
         />
-        <Tabs.Screen name="Cadastre-se" component={SignUp} />
-        <Tabs.Screen name="Entrar" component={SignIn} />
-        <Tabs.Screen name="dash" component={Dash} />
+        <Tabs.Screen
+          name="Cadastre-se"
+          component={SignUp}
+          options={{
+            tabBarLabel: 'Cadastrar',
+            tabBarIcon: ({color, size}) => (
+              <MaterialCommunityIcons
+                name="account-circle"
+                color={color}
+                size={size}
+              />
+            ),
+          }}
+        />
+        <Tabs.Screen
+          name="Entrar"
+          component={SignIn}
+          options={{
+            tabBarLabel: 'Entrar',
+            tabBarIcon: ({color, size}) => (
+              <MaterialCommunityIcons
+                name="account-multiple"
+                color={color}
+                size={size}
+              />
+            ),
+          }}
+        />
+        <Tabs.Screen
+          name="dash"
+          component={Dash}
+          options={{
+            tabBarLabel: 'Conta',
+            tabBarIcon: ({color, size}) => (
+              <MaterialCommunityIcons
+                name="account-edit"
+                color={color}
+                size={size}
+              />
+            ),
+          }}
+        />
       </Tabs.Navigator>
     </Provider>
   );
