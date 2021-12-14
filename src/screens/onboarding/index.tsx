@@ -30,13 +30,13 @@ const Onboarding: React.FC = () => {
           }}
           style={styles.titleImage}
         />
-        <View>
+        <View style={styles.onboardButtons}>
           <Button
             title="Cadastrar"
             color="#2a2a2a"
             onPress={() => handleScreens('Cadastre-se')}
           />
-          <View style={{height: 12}} />
+          {/* <View style={{height: 12}} /> */}
           <Button
             title="Entrar"
             color="#2a2a2a"
@@ -54,6 +54,9 @@ const styles = StyleSheet.create({
     height: Dimensions.get('window').height,
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  onboardButtons: {
+    justifyContent: 'space-between',
   },
   titleImage: {
     height: 200,
