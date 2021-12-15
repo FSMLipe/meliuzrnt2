@@ -46,7 +46,7 @@
     "verbose": true,
     "collectCoverage": true,
     "transformIgnorePatterns": [
-      "node_modules/(?!(react-native-vector-icons)/)"
+      "node_modules/(?!(@?react-native|@react-navigation|react-native-vector-icons)/).*"
     ],
     "collectCoverageFrom": [
       "src/**/*.ts", "src/**/*.tsx", "!src/store/**/*.ts"
