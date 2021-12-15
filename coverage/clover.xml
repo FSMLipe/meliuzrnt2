@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1639523483022" clover="3.2.0">
-  <project timestamp="1639523483024" name="All files">
-    <metrics statements="94" coveredstatements="2" conditionals="10" coveredconditionals="0" methods="45" coveredmethods="1" elements="149" coveredelements="3" complexity="0" loc="94" ncloc="94" packages="10" files="10" classes="10"/>
+<coverage generated="1639531810077" clover="3.2.0">
+  <project timestamp="1639531810077" name="All files">
+    <metrics statements="100" coveredstatements="0" conditionals="12" coveredconditionals="0" methods="48" coveredmethods="0" elements="160" coveredelements="0" complexity="0" loc="100" ncloc="100" packages="10" files="10" classes="10"/>
     <package name="src">
       <metrics statements="9" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="0"/>
       <file name="stacks.tsx" path="/home/felipe.manzoni/Documents/Meliuz/Meliuz_Repo/GAMA/my-git/meliuzrnt2/src/stacks.tsx">
@@ -9,20 +9,26 @@
         <line num="16" count="0" type="stmt"/>
         <line num="18" count="0" type="stmt"/>
         <line num="19" count="0" type="stmt"/>
-        <line num="34" count="0" type="stmt"/>
-        <line num="44" count="0" type="stmt"/>
-        <line num="58" count="0" type="stmt"/>
-        <line num="72" count="0" type="stmt"/>
-        <line num="85" count="0" type="stmt"/>
-        <line num="86" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="61" count="0" type="stmt"/>
+        <line num="76" count="0" type="stmt"/>
+        <line num="89" count="0" type="stmt"/>
+        <line num="90" count="0" type="stmt"/>
       </file>
     </package>
     <package name="src.components.Hello">
-      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <metrics statements="8" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="0"/>
       <file name="index.tsx" path="/home/felipe.manzoni/Documents/Meliuz/Meliuz_Repo/GAMA/my-git/meliuzrnt2/src/components/Hello/index.tsx">
-        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="4" type="stmt"/>
+        <metrics statements="8" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
       </file>
     </package>
     <package name="src.components.IsAuth">

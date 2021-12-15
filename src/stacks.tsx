@@ -30,6 +30,7 @@ const BottomNavigation: React.FC = () => {
           component={Onboarding}
           options={{
             tabBarLabel: 'Começo',
+            tabBarTestID: 'comeco-test',
             tabBarIcon: ({color, size}) => (
               <MaterialCommunityIcons name="home" color={color} size={size} />
             ),
@@ -40,6 +41,7 @@ const BottomNavigation: React.FC = () => {
           component={SignUp}
           options={{
             tabBarLabel: 'Cadastrar',
+            tabBarTestID: 'cadastrar-test',
             tabBarIcon: ({color, size}) => (
               <MaterialCommunityIcons
                 name="account-circle"
@@ -54,6 +56,7 @@ const BottomNavigation: React.FC = () => {
           component={SignIn}
           options={{
             tabBarLabel: 'Entrar',
+            tabBarTestID: 'entrar-test',
             tabBarIcon: ({color, size}) => (
               <MaterialCommunityIcons
                 name="account-multiple"
@@ -68,6 +71,7 @@ const BottomNavigation: React.FC = () => {
           component={Dash}
           options={{
             tabBarLabel: 'Conta',
+            tabBarTestID: 'entrar-test',
             tabBarIcon: ({color, size}) => (
               <MaterialCommunityIcons
                 name="account-edit"

@@ -20,7 +20,7 @@ const Onboarding: React.FC = () => {
 
   return (
     <SafeAreaView>
-      <View style={styles.default}>
+      <View style={styles.default} testID="onBoard">
         <Text style={styles.titleText}>
           Bem-vindo a este app inútil mas lindão!
         </Text>

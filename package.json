@@ -45,6 +45,9 @@
     "bail": 1,
     "verbose": true,
     "collectCoverage": true,
+    "transformIgnorePatterns": [
+      "node_modules/(?!(react-native-vector-icons)/)"
+    ],
     "collectCoverageFrom": [
       "src/**/*.ts", "src/**/*.tsx", "!src/store/**/*.ts"
     ],
